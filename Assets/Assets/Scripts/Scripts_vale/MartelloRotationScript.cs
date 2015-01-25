@@ -24,7 +24,7 @@ public class MartelloRotationScript : MonoBehaviour {
 		this.originalScale = this.transform.localScale;
 	}
 	void Update () {
-		if((Input.GetButtonDown("RB") || Input.GetKeyDown(KeyCode.Space)) && this.canHit){
+		if((Input.GetButtonDown("LB") || Input.GetKeyDown(KeyCode.Space)) && this.canHit){
 			martello.transform.localScale = new Vector3(this.transform.localScale.x*scaleFactor,this.transform.localScale.y*scaleFactor,this.transform.localScale.z);
 			this.canHit = false;
 			StartCoroutine("Martella");

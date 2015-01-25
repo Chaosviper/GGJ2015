@@ -57,6 +57,7 @@ public class HammerLevelManager : MonoBehaviour {
 		this.timer.Reset();
 		this.life.DisableAll();
 		yield return new WaitForSeconds(2f);
+		Application.Quit();
 	}
 
 }
