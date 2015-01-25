@@ -6,9 +6,12 @@ public class LifeController : MonoBehaviour {
 	public GameObject [] hearts;
 	private int lifeIndex = 2;
 
+	public Sprite heartLoss;
+	public Sprite heartOk;
+
 	public int RemoveLife(){
 		if(lifeIndex>-1){
-			hearts[lifeIndex].GetComponent<Image>().enabled = false;
+			hearts[lifeIndex].GetComponent<Image>().sprite = heartLoss;
 			lifeIndex--;
 
 		}
@@ -17,7 +20,7 @@ public class LifeController : MonoBehaviour {
 
 	public void Reset(){
 		foreach(GameObject heart in hearts){
-			heart.GetComponent<Image>().enabled = true;
+			heart.GetComponent<Image>().enabled = heartOk;
 			lifeIndex = 2;
 		}
 	}

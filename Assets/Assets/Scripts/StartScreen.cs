@@ -7,13 +7,22 @@ public class StartScreen : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
+	bool alreadyDone = false;
+	public Sprite sprite2;
+
 	// Update is called once per frame
 	void Update () {
 
         if (Input.GetButton("Submit"))
         {
-            Application.LoadLevel(1);
+			if(!alreadyDone){
+				alreadyDone = true;
+				GameObject.Find("texture").GetComponent<SpriteRenderer>().sprite = sprite2;
+			}
+			else{
+            	Application.LoadLevel(1);
+			}
         }
 	
 	}
