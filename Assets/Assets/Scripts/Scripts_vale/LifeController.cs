@@ -11,7 +11,7 @@ public class LifeController : MonoBehaviour {
 
 	public int RemoveLife(){
 		if(lifeIndex>-1){
-			hearts[lifeIndex].GetComponent<Image>().sprite = heartLoss;
+			hearts[lifeIndex].SetActive(false);
 			lifeIndex--;
 
 		}
