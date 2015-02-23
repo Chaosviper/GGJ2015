@@ -13,6 +13,10 @@ public class Constants{
     public static float smashAnimationDuration = 0.6f;
     public static float smashAnimationStopDuration = 0.05f;
 
+	public static float SPEED_HAND_DOWN = 3.5f;
+	public static float SPEED_BACKGROUND_LEFT = 5f;
+	public static float SPEED_THE_END_COLOR = 1f;
+
     public static float checkDistance = 1.0f;
 
     public static int maxPointsToWin = 5;
