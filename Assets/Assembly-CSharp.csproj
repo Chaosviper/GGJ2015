@@ -65,9 +65,12 @@
      <Compile Include="Assets\Scripts\Script_Kitchen\RightHandBehavior.cs" />
      <Compile Include="Assets\Scripts\Script_Kitchen\VegetablePiecesScript.cs" />
      <Compile Include="Assets\Scripts\Script_Kitchen\VegetablesController.cs" />
+     <Compile Include="Assets\Scripts\Scripts_vale\BackgroundLeftShift.cs" />
      <Compile Include="Assets\Scripts\Scripts_vale\Chiodo.cs" />
      <Compile Include="Assets\Scripts\Scripts_vale\FadeController.cs" />
+     <Compile Include="Assets\Scripts\Scripts_vale\FinalSceneAudioSourceManager.cs" />
      <Compile Include="Assets\Scripts\Scripts_vale\HammerLevelManager.cs" />
+     <Compile Include="Assets\Scripts\Scripts_vale\HandDown.cs" />
      <Compile Include="Assets\Scripts\Scripts_vale\HandHammerCollision.cs" />
      <Compile Include="Assets\Scripts\Scripts_vale\HandScriptValerio.cs" />
      <Compile Include="Assets\Scripts\Scripts_vale\LifeController.cs" />
