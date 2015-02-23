@@ -5,8 +5,10 @@ public class HammerLevelManager : MonoBehaviour {
 	//-------------------------PUBLIC_GAMEOBJ
 	public FadeController fader;
 	public GameObject ManoDestra;
+	public HandScriptValerio rightHand;
 	public HandDown right;
 	public GameObject ManoSinistra;
+	public HandScriptValerio leftHand;
 	public HandDown left;
 	public Timer_Valerio timer;
 	public LifeController life;
@@ -14,6 +16,7 @@ public class HammerLevelManager : MonoBehaviour {
 	public GameObject fiamma;
 	public BackgroundLeftShift backgroundLeftShift;
 	public FinalSceneAudioSourceManager finalSceneAudio;
+	public TheEndScript theEnd;
 
 	//-------------------------PRIVATE_VAR
 	private Vector3 ManoDestraOriginalPos;
@@ -57,6 +60,8 @@ public class HammerLevelManager : MonoBehaviour {
 	}
 
 	IEnumerator Win(){
+		this.rightHand.enabled = false;
+		this.leftHand.enabled = false;
 		this.timer.Reset();
 		this.life.DisableAll();
 		this.right.Enable();
@@ -71,8 +76,10 @@ public class HammerLevelManager : MonoBehaviour {
 		this.fader.FadeOff();
 		yield return new WaitForSeconds(1f);
 		this.finalSceneAudio.WhatWeDoNow();
-		Debug.Log("Win");
-//		Application.Quit();
+		yield return new WaitForSeconds(1f);
+		this.theEnd.Enable();
+		yield return new WaitForSeconds(3f);
+		Application.Quit();
 	}
 
 }

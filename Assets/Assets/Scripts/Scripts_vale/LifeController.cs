@@ -20,7 +20,8 @@ public class LifeController : MonoBehaviour {
 
 	public void Reset(){
 		foreach(GameObject heart in hearts){
-			heart.GetComponent<Image>().enabled = heartOk;
+			heart.SetActive(true);
+//			heart.GetComponent<Image>().enabled = heartOk;
 			lifeIndex = 2;
 		}
 	}

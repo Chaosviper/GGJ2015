@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Scripts_vale\HandScriptValerio.cs" />
      <Compile Include="Assets\Scripts\Scripts_vale\LifeController.cs" />
      <Compile Include="Assets\Scripts\Scripts_vale\MartelloRotationScript.cs" />
+     <Compile Include="Assets\Scripts\Scripts_vale\TheEndScript.cs" />
      <Compile Include="Assets\Scripts\Scripts_vale\Timer_Valerio.cs" />
      <Compile Include="Assets\Scripts\StartScreen.cs" />
      <Compile Include="Assets\Scripts\Tremor.cs" />
